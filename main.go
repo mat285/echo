@@ -14,14 +14,10 @@ func main() {
 	for i := 0; i < num; i++ {
 		fmt.Println(i)
 		time.Sleep(time.Second)
-		if i > num/2 {
+		if i > num/2 && fail {
 			panic("failing now")
 		}
 	}
-	if fail {
-		panic("Failing now")
-	} else {
-		fmt.Println(num)
-		fmt.Println("Done :D")
-	}
+	fmt.Println(num)
+	fmt.Println("Done :D")
 }
