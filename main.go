@@ -26,6 +26,7 @@ func main() {
 	awscreds, err := ioutil.ReadFile("/var/aws-credentials")
 	if err != nil {
 		fmt.Println(err)
+		time.Sleep(time.Minute * 3)
 		os.Exit(1)
 	}
 
