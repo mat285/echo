@@ -1,4 +1,5 @@
 accessibility: public
 containerPort: 80
 autoscale: enabled
+awsPolicyArn: arn:aws:iam::517567714695:policy/testing-creds
 awsCredentialsMountPath: /var/aws-credentials
