@@ -6,8 +6,13 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
+	"strings"
 	"time"
 
+	"github.com/aws/aws-sdk-go/aws"
+	"github.com/aws/aws-sdk-go/aws/credentials"
+	"github.com/aws/aws-sdk-go/aws/session"
+	"github.com/aws/aws-sdk-go/service/s3"
 	logger "github.com/blendlabs/go-logger"
 	"github.com/blendlabs/go-util/env"
 	web "github.com/blendlabs/go-web"
@@ -17,6 +22,47 @@ func main() {
 	agent := logger.NewFromEnvironment()
 
 	appStart := time.Now()
+
+	awscreds, err := ioutil.ReadFile("/var/aws-credentials")
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
+
+	parts := strings.Split(string(awscreds), "\n")
+	var access, secret string
+	for _, part := range parts {
+		san := strings.TrimSpace(part)
+		if strings.HasPrefix(san, "aws_access_key_id=") {
+			access = strings.TrimSpace(strings.TrimPrefix(san, "aws_access_key_id="))
+		}
+		if strings.HasPrefix(san, "aws_secret_access_key=") {
+			secret = strings.TrimSpace(strings.TrimPrefix(san, "aws_secret_access_key="))
+		}
+	}
+
+	if len(access) == 0 || len(secret) == 0 {
+		fmt.Println("Missing some creds")
+		fmt.Println(access)
+		fmt.Println(secret)
+		os.Exit(1)
+	}
+	data := strings.NewReader("hello")
+	input := &s3.PutObjectInput{
+		Bucket: aws.String("blend-testing-creds"),
+		Key:    aws.String("key"),
+		Body:   data,
+	}
+
+	serv := s3.New(session.New(&aws.Config{
+		Credentials: credentials.NewStaticCredentials(access, secret, ""),
+	}))
+
+	_, err = serv.PutObject(input)
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
 
 	contents, err := ioutil.ReadFile(env.Env().String("CONFIG_PATH", "/var/secrets/config.yml"))
 	if err != nil {
