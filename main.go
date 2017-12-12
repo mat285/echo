@@ -56,6 +56,7 @@ func main() {
 	}
 
 	serv := s3.New(session.New(&aws.Config{
+		Region:      aws.String("us-east-1"),
 		Credentials: credentials.NewStaticCredentials(access, secret, ""),
 	}))
 
