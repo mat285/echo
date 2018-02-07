@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
+	"strconv"
 	"time"
 
 	logger "github.com/blendlabs/go-logger"
@@ -35,9 +36,9 @@ func main() {
 		}
 		return r.Text().Result(string(contents))
 	})
-	app.GET("/env", func(r *web.Ctx) web.Result {
-		return r.JSON().Result(env.Env().Vars())
-	})
+	// app.GET("/env", func(r *web.Ctx) web.Result {
+	// 	return r.JSON().Result(env.Env().Vars())
+	// })
 	app.GET("/status", func(r *web.Ctx) web.Result {
 		if time.Since(appStart) > 12*time.Second {
 			return r.Text().Result("OK!")
@@ -62,22 +63,32 @@ func main() {
 
 		return nil
 	})
-	app.GET("/echo/*filepath", func(r *web.Ctx) web.Result {
-		body := r.Request.URL.Path
-		if len(body) == 0 {
-			return r.RawWithContentType(web.ContentTypeText, []byte("no response."))
-		}
-		return r.RawWithContentType(web.ContentTypeText, []byte(body))
-	})
-	app.POST("/echo/*filepath", func(r *web.Ctx) web.Result {
-		body, err := r.PostBody()
+	// app.GET("/echo/*filepath", func(r *web.Ctx) web.Result {
+	// 	body := r.Request.URL.Path
+	// 	if len(body) == 0 {
+	// 		return r.RawWithContentType(web.ContentTypeText, []byte("no response."))
+	// 	}
+	// 	return r.RawWithContentType(web.ContentTypeText, []byte(body))
+	// })
+	// app.POST("/echo/*filepath", func(r *web.Ctx) web.Result {
+	// 	body, err := r.PostBody()
+	// 	if err != nil {
+	// 		return r.JSON().InternalError(err)
+	// 	}
+	// 	if len(body) == 0 {
+	// 		return r.RawWithContentType(web.ContentTypeText, []byte("nada."))
+	// 	}
+	// 	return r.RawWithContentType(web.ContentTypeText, body)
+	// })
+
+	app.GET("/wait/:time", func(r *web.Ctx) web.Result {
+		t := r.Param("time")
+		i, err := strconv.Atoi(t)
 		if err != nil {
 			return r.JSON().InternalError(err)
 		}
-		if len(body) == 0 {
-			return r.RawWithContentType(web.ContentTypeText, []byte("nada."))
-		}
-		return r.RawWithContentType(web.ContentTypeText, body)
+		time.Sleep(time.Second * time.Duration(i))
+		return r.JSON().OK()
 	})
 
 	log.Fatal(app.Start())
