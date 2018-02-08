@@ -1,3 +1,4 @@
 accessibility: public
 containerPort: 80
 autoscale: enabled
+fqdn: echo.test.k8s.centrio.com
