@@ -1,3 +1,5 @@
 accessibility: public
 containerPort: 80
 autoscale: enabled
+persistentStorage: 10
+persistentVolumeMountPath: /volume
