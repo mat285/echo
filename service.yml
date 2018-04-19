@@ -1,4 +1,4 @@
-accessibility: public
+accessibility: private
 containerPort: 80
 autoscale: enabled
 fqdn: mt-dns.k8s.centrio.com
