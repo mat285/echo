@@ -16,6 +16,10 @@ import (
 func main() {
 	agent := logger.NewFromEnvironment()
 
+	if len(os.Getenv("NEED_ME")) == 0 {
+		panic("missing env var")
+	}
+
 	appStart := time.Now()
 
 	contents, err := ioutil.ReadFile(env.Env().String("CONFIG_PATH", "/var/secrets/config.yml"))
