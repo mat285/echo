@@ -1,5 +1,8 @@
 accessibility: protected
 containerPort: 5000
+autoscale: enabled
+replicas: 10
+autoscale: disabled
 
 readinessProbe:
   httpGet:
