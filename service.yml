@@ -1,3 +1,5 @@
-accessibility: public
+accessibility: protected
 containerPort: 80
 autoscale: enabled
+replicas: 10
+autoscale: disabled
