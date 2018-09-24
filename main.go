@@ -4,6 +4,9 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
+	"os"
+	"os/signal"
+	"syscall"
 	"time"
 
 	"github.com/blend/go-sdk/env"
@@ -101,6 +104,16 @@ func main() {
 		log.Infof("body: %s", body)
 		return r.JSON().OK()
 	})
+
+	quit := make(chan os.Signal, 1)
+	// trap ^C
+	signal.Notify(quit, os.Interrupt)
+	signal.Notify(quit, syscall.SIGTERM)
+
+	go func() {
+		<-quit
+		log.SyncError(app.Shutdown())
+	}()
 
 	if err := web.StartWithGracefulShutdown(app); err != nil {
 		log.SyncFatalExit(err)
