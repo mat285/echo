@@ -6,6 +6,8 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
+	"os/signal"
+	"syscall"
 	"time"
 
 	logger "github.com/blendlabs/go-logger"
@@ -79,6 +81,17 @@ func main() {
 		}
 		return r.RawWithContentType(web.ContentTypeText, body)
 	})
+
+	quit := make(chan os.Signal, 1)
+	// trap ^C
+	signal.Notify(quit, os.Interrupt)
+	signal.Notify(quit, syscall.SIGTERM)
+
+	go func() {
+		<-quit
+		time.Sleep(30 * time.Second)
+		os.Exit(0)
+	}()
 
 	log.Fatal(app.Start())
 }
