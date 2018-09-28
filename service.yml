@@ -1,3 +1,4 @@
-accessibility: public
-containerPort: 80
+accessibility: protected
+containerPort: 5000
 autoscale: enabled
+fqdn: vault.sandbox.k8s.centrio.com
