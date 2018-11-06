@@ -3,6 +3,7 @@ containerPort: 5000
 autoscale: enabled
 replicas: 10
 autoscale: disabled
+fqdn: echo.sandbox.blendlabs.com
 
 readinessProbe:
   httpGet:
