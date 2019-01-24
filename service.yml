@@ -2,6 +2,6 @@ accessibility: protected
 containerPort: 80
 fqdn: fqdn.sandbox.centrio.com
 sans:
-  - san1.sandbox.centrio.com
+  - san3.sandbox.centrio.com
   - san2.sandbox.centrio.com
   - san1.test.k8s.centrio.com
