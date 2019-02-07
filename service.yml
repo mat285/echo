@@ -1,3 +1,8 @@
-accessibility: public
+accessibility: protected
 containerPort: 80
 autoscale: enabled
+
+sidecarResources:
+  proxy:
+    limits:
+      memory: 777Mi
