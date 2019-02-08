@@ -24,7 +24,22 @@ func main() {
 	}
 
 	app := web.New()
+
+	cert, err := ioutil.ReadFile("/var/tls-certs/tls.crt")
+	if err != nil {
+		panic(err)
+	}
+	key, err := ioutil.ReadFile("/var/tls-certs/tls.key")
+	if err != nil {
+		panic(err)
+	}
+
 	app.SetLogger(agent)
+	err = app.UseTLS(cert, key)
+	if err != nil {
+		panic(err)
+	}
+	app.SetPort("80")
 	app.GET("/", func(r *web.Ctx) web.Result {
 		return r.Text().Result("echo")
 	})

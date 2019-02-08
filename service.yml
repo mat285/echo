@@ -1,3 +1,5 @@
-accessibility: public
+accessibility: protected
 containerPort: 80
 autoscale: enabled
+protocol: TCP
+httpRedirect: enabled
