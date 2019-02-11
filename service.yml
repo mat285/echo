@@ -3,3 +3,8 @@ containerPort: 80
 autoscale: enabled
 protocol: TCP
 httpRedirect: enabled
+ports:
+  - containerPort: 443
+    name: https
+    protocol: TCP
+  
