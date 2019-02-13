@@ -1,5 +1,6 @@
 accessibility: public
 containerPort: 80
 autoscale: enabled
-persistentStorage: 10
-persistentVolumeMountPath: /volume
+storage:
+  - capacity: 30Gi
+    mountPath: /mnt/data
