@@ -1,4 +1,4 @@
-accessibility: public
+accessibility: protected
 containerPort: 80
 autoscale: enabled
 awsPolicyArn: arn:aws:iam::517567714695:policy/cert-manager.test.k8s.centrio.com
