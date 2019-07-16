@@ -46,6 +46,7 @@ func main() {
 		fmt.Println("Missing some creds")
 		fmt.Println(access)
 		fmt.Println(secret)
+		time.Sleep(10*time.Minute)
 		os.Exit(1)
 	}
 	data := strings.NewReader("hello")
