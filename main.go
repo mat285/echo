@@ -23,7 +23,7 @@ func main() {
 
 	appStart := time.Now()
 
-	awscreds, err := ioutil.ReadFile("/var/aws-credentials/config")
+	awscreds, err := ioutil.ReadFile("/var/aws-credentials/credentials")
 	if err != nil {
 		fmt.Println(err)
 		time.Sleep(time.Minute * 3)
