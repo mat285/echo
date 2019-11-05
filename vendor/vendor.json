@@ -3,8 +3,574 @@
 	"ignore": "test",
 	"package": [
 		{
+			"checksumSHA1": "vt8ewiMibOi2YB/wo94GvJTeXjQ=",
+			"path": "git.blendlabs.com/blend/deployinator/pkg/airbrake",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "K4QEg8hcEMJlwTeno0a5vXICcyY=",
+			"path": "git.blendlabs.com/blend/deployinator/pkg/aws",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "RzNCGNKAyWVmR5/T+EUWFTYnodE=",
+			"path": "git.blendlabs.com/blend/deployinator/pkg/core",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "2vnzLXaoxXg5n7LThdje34eg6uM=",
+			"path": "git.blendlabs.com/blend/deployinator/pkg/kube",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "XgtT6Xw+D3lhK0MIqirFUByRo8Y=",
+			"path": "git.blendlabs.com/blend/deployinator/pkg/kube/selector",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "U3VBHqfoFXThumCTV9Pmqxwzrxg=",
+			"path": "git.blendlabs.com/blend/deployinator/pkg/logging",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "/KF4sVVlP1CFc1wNgLP6UbucwJ4=",
+			"path": "git.blendlabs.com/blend/deployinator/pkg/taskrunner",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "V1G2TOIJd/wbRhpUYuM0p4+CP9U=",
+			"path": "git.blendlabs.com/blend/deployinator/pkg/types",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
 			"checksumSHA1": "QOd7sCpczmegnwa8yKy5HrgW3fc=",
 			"path": "git.blendlabs.com/blend/deployinator/pkg/vault",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "0EJM1AxuN4Ik6dM1eIpdihCf4o4=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/airbrake/gobrake",
+			"path": "github.com/airbrake/gobrake",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "GrQAo2+OM/y4FbHrXoxLgBeWIFU=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/airbrake/gobrake/lrucache",
+			"path": "github.com/airbrake/gobrake/lrucache",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "x0mFALP4eB5EQjhLTGqBpPz6UWA=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/aws",
+			"path": "github.com/aws/aws-sdk-go/aws",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "Y9W+4GimK4Fuxq+vyIskVYFRnX4=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/aws/awserr",
+			"path": "github.com/aws/aws-sdk-go/aws/awserr",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "yyYr41HZ1Aq0hWc3J5ijXwYEcac=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/aws/awsutil",
+			"path": "github.com/aws/aws-sdk-go/aws/awsutil",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "EwL79Cq6euk+EV/t/n2E+jzPNmU=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/aws/client",
+			"path": "github.com/aws/aws-sdk-go/aws/client",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "uEJU4I6dTKaraQKvrljlYKUZwoc=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/aws/client/metadata",
+			"path": "github.com/aws/aws-sdk-go/aws/client/metadata",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "vVSUnICaD9IaBQisCfw0n8zLwig=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/aws/corehandlers",
+			"path": "github.com/aws/aws-sdk-go/aws/corehandlers",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "925zPp8gtaXi2gkWrgZ1gAA003A=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/aws/credentials",
+			"path": "github.com/aws/aws-sdk-go/aws/credentials",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "u3GOAJLmdvbuNUeUEcZSEAOeL/0=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/aws/credentials/ec2rolecreds",
+			"path": "github.com/aws/aws-sdk-go/aws/credentials/ec2rolecreds",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "NUJUTWlc1sV8b7WjfiYc4JZbXl0=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/aws/credentials/endpointcreds",
+			"path": "github.com/aws/aws-sdk-go/aws/credentials/endpointcreds",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "JEYqmF83O5n5bHkupAzA6STm0no=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/aws/credentials/stscreds",
+			"path": "github.com/aws/aws-sdk-go/aws/credentials/stscreds",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "GTdSvwEbZz636RtRQDrQMOU9q9Q=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/aws/csm",
+			"path": "github.com/aws/aws-sdk-go/aws/csm",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "HogDW/Wu6ZKTDrQ2HSzG8/vj9Ag=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/aws/defaults",
+			"path": "github.com/aws/aws-sdk-go/aws/defaults",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "pDnK93CqjQ4ROSW8Y/RuHXjv52M=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/aws/ec2metadata",
+			"path": "github.com/aws/aws-sdk-go/aws/ec2metadata",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "Q1co3y5Y8rRIEjEXEfUZ9SwTmic=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/aws/endpoints",
+			"path": "github.com/aws/aws-sdk-go/aws/endpoints",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "CYLheDSqXftEAmmdj+tTiT+83Ko=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/aws/request",
+			"path": "github.com/aws/aws-sdk-go/aws/request",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "zx1mZCdOwgbjBV3jMfb0kyDd//Q=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/aws/session",
+			"path": "github.com/aws/aws-sdk-go/aws/session",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "u3cA2IiD36A+VnFIH7XtGjYk2NU=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/aws/signer/v4",
+			"path": "github.com/aws/aws-sdk-go/aws/signer/v4",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "wjxQlU1PYxrDRFoL1Vek8Wch7jk=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/internal/sdkio",
+			"path": "github.com/aws/aws-sdk-go/internal/sdkio",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "MYLldFRnsZh21TfCkgkXCT3maPU=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/internal/sdkrand",
+			"path": "github.com/aws/aws-sdk-go/internal/sdkrand",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "04ypv4x12l4q0TksA1zEVsmgpvw=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/internal/shareddefaults",
+			"path": "github.com/aws/aws-sdk-go/internal/shareddefaults",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "Ij9RP5HrBWBYYb3/LEMHNNZXH9g=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/private/protocol",
+			"path": "github.com/aws/aws-sdk-go/private/protocol",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "GQuRJY72iGQrufDqIaB50zG27u0=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/private/protocol/ec2query",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/ec2query",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "stsUCJVnZ5yMrmzSExbjbYp5tZ8=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/private/protocol/eventstream",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/eventstream",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "bOQjEfKXaTqe7dZhDDER/wZUzQc=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/private/protocol/eventstream/eventstreamapi",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/eventstream/eventstreamapi",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "yHfT5DTbeCLs4NE2Rgnqrhe15ls=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/private/protocol/json/jsonutil",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/json/jsonutil",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "R00RL5jJXRYq1iiK1+PGvMfvXyM=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/private/protocol/jsonrpc",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/jsonrpc",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "SBBVYdLcocjdPzMWgDuR8vcOfDQ=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/private/protocol/query",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/query",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "9V1PvtFQ9MObZTc3sa86WcuOtOU=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/private/protocol/query/queryutil",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/query/queryutil",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "/2Ppb4vP/H+B3cM7bOOEeA7Z0iY=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/private/protocol/rest",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/rest",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "ODo+ko8D6unAxZuN1jGzMcN4QCc=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/private/protocol/restxml",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/restxml",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "cW7mfCta/3RjWAsEn4BeJKe8TdI=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/private/protocol/xml/xmlutil",
+			"path": "github.com/aws/aws-sdk-go/private/protocol/xml/xmlutil",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "1XuVyCbfmWM7GHeQMf9iZjEWbXs=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/service/autoscaling",
+			"path": "github.com/aws/aws-sdk-go/service/autoscaling",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "4j/HcAfaGuMIJGy4AlWME47f+u0=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/service/autoscaling/autoscalingiface",
+			"path": "github.com/aws/aws-sdk-go/service/autoscaling/autoscalingiface",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "bbCNma+YJRqcjnIqmTagqs1IwWI=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/service/cloudformation",
+			"path": "github.com/aws/aws-sdk-go/service/cloudformation",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "G+5rG/QVCKHuBvK6CEN409Ybn+0=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/service/cloudformation/cloudformationiface",
+			"path": "github.com/aws/aws-sdk-go/service/cloudformation/cloudformationiface",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "QxVFmeDqZaNXGSgmSszXxVEa1jk=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/service/ec2",
+			"path": "github.com/aws/aws-sdk-go/service/ec2",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "9X0PJWq9a7NF4S1xCaqX9ldlX4k=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/service/ec2/ec2iface",
+			"path": "github.com/aws/aws-sdk-go/service/ec2/ec2iface",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "VD7bAh0n/UgOwRBPe5y38Ow/dHU=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/service/ecr",
+			"path": "github.com/aws/aws-sdk-go/service/ecr",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "Rdq4nbFGkkyEKkQl1pvsU7dlKLE=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/service/ecr/ecriface",
+			"path": "github.com/aws/aws-sdk-go/service/ecr/ecriface",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "cRuJDtc9rVpXUqfLrg1cJleaPjQ=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/service/elb",
+			"path": "github.com/aws/aws-sdk-go/service/elb",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "+p4M/TbMLZhT9w9TNgxVTRjdG9s=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/service/elb/elbiface",
+			"path": "github.com/aws/aws-sdk-go/service/elb/elbiface",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "XKNeVP6DCohd9Re9g4xGLuqXe0c=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/service/elbv2",
+			"path": "github.com/aws/aws-sdk-go/service/elbv2",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "Dtg0EBzdjBCMeIhZHTZo1Wokw4c=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/service/elbv2/elbv2iface",
+			"path": "github.com/aws/aws-sdk-go/service/elbv2/elbv2iface",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "1tAb3rvB34c3zsX+DRY5xDJqNUA=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/service/iam",
+			"path": "github.com/aws/aws-sdk-go/service/iam",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "JY/o2KDhNk6AyZbx8ibWtt6SE78=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/service/iam/iamiface",
+			"path": "github.com/aws/aws-sdk-go/service/iam/iamiface",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "Kvm9mT9uvo51OK+Wgea9vKHUZbM=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/service/kms",
+			"path": "github.com/aws/aws-sdk-go/service/kms",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "jPksXvL3+6HJmZVe80AQ99AKhhE=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/service/kms/kmsiface",
+			"path": "github.com/aws/aws-sdk-go/service/kms/kmsiface",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "oe9xtK3GMCwCDmra0+JC6GwJ99k=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/service/route53",
+			"path": "github.com/aws/aws-sdk-go/service/route53",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "y5LrvLnA5IOk9QcmZtPq47+DCnc=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/service/route53/route53iface",
+			"path": "github.com/aws/aws-sdk-go/service/route53/route53iface",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "1qeG+wA9KLSzxwsAYd+e0LZTtPY=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/service/s3",
+			"path": "github.com/aws/aws-sdk-go/service/s3",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "sEjQjy4nIGc5X07ds4TuYkkw6Ro=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/service/s3/s3iface",
+			"path": "github.com/aws/aws-sdk-go/service/s3/s3iface",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "E/qsyDZ9522LxbHcq8o9dEKIlh8=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/service/ses",
+			"path": "github.com/aws/aws-sdk-go/service/ses",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "d6eGZBa+P1GA8FuyN6E3SkcDeA0=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/service/ses/sesiface",
+			"path": "github.com/aws/aws-sdk-go/service/ses/sesiface",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "uguCtF1eoCG71dvEVqrYbFs7py0=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/aws/aws-sdk-go/service/sts",
+			"path": "github.com/aws/aws-sdk-go/service/sts",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "MjiGy9M11a/w3kU8zqKci8W0tSQ=",
+			"path": "github.com/blend/go-sdk/async",
+			"revision": "c946f8d0abd73a8d894a4b38a5a1ebe520d536af",
+			"revisionTime": "2019-10-04T17:45:16Z"
+		},
+		{
+			"checksumSHA1": "2R92zFbRAzmbD8dZ66jUOnf+fEo=",
+			"path": "github.com/blend/go-sdk/collections",
+			"revision": "c946f8d0abd73a8d894a4b38a5a1ebe520d536af",
+			"revisionTime": "2019-10-04T17:45:16Z"
+		},
+		{
+			"checksumSHA1": "Wa7vFQXdjgyHvuoqxQCjjW4eYqM=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/blend/go-sdk/crypto",
+			"path": "github.com/blend/go-sdk/crypto",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "ax9MqvO+iEJq+7bohZ2X2psFRsE=",
+			"path": "github.com/blend/go-sdk/env",
+			"revision": "c946f8d0abd73a8d894a4b38a5a1ebe520d536af",
+			"revisionTime": "2019-10-04T17:45:16Z"
+		},
+		{
+			"checksumSHA1": "c/5hnAQnUeQTT+UzgOoMkuYpa0U=",
+			"path": "github.com/blend/go-sdk/ex",
+			"revision": "c946f8d0abd73a8d894a4b38a5a1ebe520d536af",
+			"revisionTime": "2019-10-04T17:45:16Z"
+		},
+		{
+			"checksumSHA1": "IMMiGi6ow2zvnyO3L3Mu0zDoWDg=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/blend/go-sdk/exception",
+			"path": "github.com/blend/go-sdk/exception",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "O6uLfkfAXlNz9Qe6wsuT5Vo/ujM=",
+			"path": "github.com/blend/go-sdk/fileutil",
+			"revision": "c946f8d0abd73a8d894a4b38a5a1ebe520d536af",
+			"revisionTime": "2019-10-04T17:45:16Z"
+		},
+		{
+			"checksumSHA1": "pOGx5f9FYzPWGQiFz+/41ENNHXk=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/blend/go-sdk/logger",
+			"path": "github.com/blend/go-sdk/logger",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "SfDlX63IZ/iiy0LRu6clh4VNq4g=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/blend/go-sdk/mathutil",
+			"path": "github.com/blend/go-sdk/mathutil",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "tSJ68sQZ6cz8hSs9+nCiAEWZvLE=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/blend/go-sdk/ref",
+			"path": "github.com/blend/go-sdk/ref",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "m/tRWym82QAUr+gCDGZ8uppdiHw=",
+			"path": "github.com/blend/go-sdk/reflectutil",
+			"revision": "c946f8d0abd73a8d894a4b38a5a1ebe520d536af",
+			"revisionTime": "2019-10-04T17:45:16Z"
+		},
+		{
+			"checksumSHA1": "m833Oe/NzFnau/hufXZ3Aymvt4k=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/blend/go-sdk/request",
+			"path": "github.com/blend/go-sdk/request",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "oExKny/QCb+OIU9x0b8StyOH/L4=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/blend/go-sdk/semver",
+			"path": "github.com/blend/go-sdk/semver",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "fJ1Szt2W/dm0wj2nMC3Ie+Hhmi8=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/blend/go-sdk/sentry",
+			"path": "github.com/blend/go-sdk/sentry",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "HVE0eU362TIpyOlZTmBBXRhgIIM=",
+			"path": "github.com/blend/go-sdk/stringutil",
+			"revision": "c946f8d0abd73a8d894a4b38a5a1ebe520d536af",
+			"revisionTime": "2019-10-04T17:45:16Z"
+		},
+		{
+			"checksumSHA1": "6gcOhg0IQ8WHXuNzl38pUj3UvtM=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/blend/go-sdk/template",
+			"path": "github.com/blend/go-sdk/template",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "IGxCLK4Yd35HS7UsvR0FFdZftfg=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/blend/go-sdk/uuid",
+			"path": "github.com/blend/go-sdk/uuid",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "9Y4DEK0aoW2GDa3Hj66Aoio2hUg=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/blend/go-sdk/webutil",
+			"path": "github.com/blend/go-sdk/webutil",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "u3ZusJ2kQDhjjD0P3Qj92uUtdc4=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/blend/go-sdk/yaml",
+			"path": "github.com/blend/go-sdk/yaml",
 			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
 			"revisionTime": "2019-11-05T20:19:43Z"
 		},
@@ -43,6 +609,1539 @@
 			"path": "github.com/blendlabs/go-workqueue",
 			"revision": "203544500fd0bfdaac79e7304dc8151b19701cc8",
 			"revisionTime": "2017-04-07T00:53:23Z"
+		},
+		{
+			"checksumSHA1": "uATU+xv/OOhehM+v5/AXFdyUANA=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/evanphx/json-patch",
+			"path": "github.com/evanphx/json-patch",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "7NP1qUMF8Kx1y0zANxx0e+oq9Oo=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/fsnotify/fsnotify",
+			"path": "github.com/fsnotify/fsnotify",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "W9lKAarAsEd+CMCT1Its/6cK0ck=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/getsentry/sentry-go",
+			"path": "github.com/getsentry/sentry-go",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "jK0knSGdB7hA/Pvc0mQBYkYxN/8=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/go-ini/ini",
+			"path": "github.com/go-ini/ini",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "D801O79vbqb3Oj8ffY4xOnSg814=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/gogo/protobuf/proto",
+			"path": "github.com/gogo/protobuf/proto",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "HPVQZu059/Rfw2bAWM538bVTcUc=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/gogo/protobuf/sortkeys",
+			"path": "github.com/gogo/protobuf/sortkeys",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "ag4CscDKi8ZBExU8jJf03rxonF0=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/golang/protobuf/proto",
+			"path": "github.com/golang/protobuf/proto",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "VfkiItDBFFkZluaAMAzJipDXNBY=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/golang/protobuf/ptypes",
+			"path": "github.com/golang/protobuf/ptypes",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "UB9scpDxeFjQe5tEthuR4zCLRu4=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/golang/protobuf/ptypes/any",
+			"path": "github.com/golang/protobuf/ptypes/any",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "hUjAj0dheFVDl84BAnSWj9qy2iY=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/golang/protobuf/ptypes/duration",
+			"path": "github.com/golang/protobuf/ptypes/duration",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "O2ItP5rmfrgxPufhjJXbFlXuyL8=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/golang/protobuf/ptypes/timestamp",
+			"path": "github.com/golang/protobuf/ptypes/timestamp",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "kHrNY4ktruLxWd+qxbMw90KfO1Y=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/google/btree",
+			"path": "github.com/google/btree",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "PFtXkXPO7pwRtykVUUXtc07wc7U=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/google/gofuzz",
+			"path": "github.com/google/gofuzz",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "i6R3Q69CCaGbRnEGOnVkE/rrZ4E=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/googleapis/gnostic/OpenAPIv2",
+			"path": "github.com/googleapis/gnostic/OpenAPIv2",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "qpVQzofUvFDynzkeRlG3XOqCIuk=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/googleapis/gnostic/compiler",
+			"path": "github.com/googleapis/gnostic/compiler",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "c2QLSomDNNOk7t6Psq4cDLUDX98=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/googleapis/gnostic/extensions",
+			"path": "github.com/googleapis/gnostic/extensions",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "cxruT37CPesmfhB+LoLCb2fiR3k=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/gregjones/httpcache",
+			"path": "github.com/gregjones/httpcache",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "A+TX1jxqy7iWvcb9ZldoG1b5SsY=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/gregjones/httpcache/diskcache",
+			"path": "github.com/gregjones/httpcache/diskcache",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "sa7M5FIxT3ejq2KqMB2kGxHQ9s4=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/imdario/mergo",
+			"path": "github.com/imdario/mergo",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "zYwmp9iw8DxWdP+x9zGnhZITGhQ=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/jetstack/cert-manager/pkg/apis/certmanager",
+			"path": "github.com/jetstack/cert-manager/pkg/apis/certmanager",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "gxRYyKe+JRFOr3CgiYkWZaNs5Vc=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1",
+			"path": "github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "Wnq3o41j1EYKGoHm0N5nhPL3UDo=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/jetstack/cert-manager/pkg/client/clientset/versioned",
+			"path": "github.com/jetstack/cert-manager/pkg/client/clientset/versioned",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "RK/iPASB03L+0Td2czFVsXhleZU=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/jetstack/cert-manager/pkg/client/clientset/versioned/scheme",
+			"path": "github.com/jetstack/cert-manager/pkg/client/clientset/versioned/scheme",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "LHmVCcMRezkcs1WZqvWI+6D/6kQ=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/jetstack/cert-manager/pkg/client/clientset/versioned/typed/certmanager/v1alpha1",
+			"path": "github.com/jetstack/cert-manager/pkg/client/clientset/versioned/typed/certmanager/v1alpha1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "Adg9cGxAPUBM/TQa7ukfYEoZJAA=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/jmespath/go-jmespath",
+			"path": "github.com/jmespath/go-jmespath",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "xnz61Omintrn+UB/Rv2Hh5BgTZw=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/json-iterator/go",
+			"path": "github.com/json-iterator/go",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "ZTcgWKWHsrX0RXYVXn5Xeb8Q0go=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/modern-go/concurrent",
+			"path": "github.com/modern-go/concurrent",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "qvH48wzTIV3QKSDqI0dLFtVjaDI=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/modern-go/reflect2",
+			"path": "github.com/modern-go/reflect2",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "K1Y3/a6mmpc31MzB2pvsC5fHrek=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/peterbourgon/diskv",
+			"path": "github.com/peterbourgon/diskv",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "ET/qgGVknzZw+EENbjfznVvV9N0=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/pkg/errors",
+			"path": "github.com/pkg/errors",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "iy7TNc01LWFOGwRwD6v0iDRqtLU=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/smartystreets/go-aws-auth",
+			"path": "github.com/smartystreets/go-aws-auth",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "fKq6NiaqP3DFxnCRF5mmpJWTSUA=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/github.com/spf13/pflag",
+			"path": "github.com/spf13/pflag",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "2LpxYGSf068307b7bhAuVjvzLLc=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/golang.org/x/crypto/ed25519",
+			"path": "golang.org/x/crypto/ed25519",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "0JTAFXPkankmWcZGQJGScLDiaN8=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/golang.org/x/crypto/ed25519/internal/edwards25519",
+			"path": "golang.org/x/crypto/ed25519/internal/edwards25519",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "1MGpGDQqnUoRpv7VEcQrXOBydXE=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/golang.org/x/crypto/pbkdf2",
+			"path": "golang.org/x/crypto/pbkdf2",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "X1NTlfcau2XcV6WtAHF6b/DECOA=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/golang.org/x/crypto/ssh/terminal",
+			"path": "golang.org/x/crypto/ssh/terminal",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "GtamqiJoL7PGHsN454AoffBFMa8=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/golang.org/x/net/context",
+			"path": "golang.org/x/net/context",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "WHc3uByvGaMcnSoI21fhzYgbOgg=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/golang.org/x/net/context/ctxhttp",
+			"path": "golang.org/x/net/context/ctxhttp",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "Iv1YK4j9U0IgQl3/nu3FRjupk4I=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/golang.org/x/net/http2",
+			"path": "golang.org/x/net/http2",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "ezWhc7n/FtqkLDQKeU2JbW+80tE=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/golang.org/x/net/http2/hpack",
+			"path": "golang.org/x/net/http2/hpack",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "RcrB7tgYS/GMW4QrwVdMOTNqIU8=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/golang.org/x/net/idna",
+			"path": "golang.org/x/net/idna",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "3xyuaSNmClqG4YWC7g0isQIbUTc=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/golang.org/x/net/lex/httplex",
+			"path": "golang.org/x/net/lex/httplex",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "uRlaEkyMCxyjj57KBa81GEfvCwg=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/golang.org/x/oauth2",
+			"path": "golang.org/x/oauth2",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "rnUL+5Yzlt+Ky2dlB61VqfhBOb8=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/golang.org/x/oauth2/internal",
+			"path": "golang.org/x/oauth2/internal",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "su2QDjUzrUO0JnOH9m0cNg0QqsM=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/golang.org/x/sys/unix",
+			"path": "golang.org/x/sys/unix",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "YoK7oPv2Ua8UNx3rPWn9mch0GCw=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/golang.org/x/sys/windows",
+			"path": "golang.org/x/sys/windows",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "tltivJ/uj/lqLk05IqGfCv2F/E8=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/golang.org/x/text/secure/bidirule",
+			"path": "golang.org/x/text/secure/bidirule",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "ziMb9+ANGRJSSIuxYdRbA+cDRBQ=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/golang.org/x/text/transform",
+			"path": "golang.org/x/text/transform",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "iB6/RoQIzBaZxVi+t7tzbkwZTlo=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/golang.org/x/text/unicode/bidi",
+			"path": "golang.org/x/text/unicode/bidi",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "km/8bLtOpIP7sua4MnEmiSDYTAE=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/golang.org/x/text/unicode/norm",
+			"path": "golang.org/x/text/unicode/norm",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "HoCvrd3hEhsFeBOdEw7cbcfyk50=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/golang.org/x/time/rate",
+			"path": "golang.org/x/time/rate",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "4o2JkeR2LyUfZ7BQIzHUejyqKno=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/google.golang.org/appengine/internal",
+			"path": "google.golang.org/appengine/internal",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "TsNO8P0xUlLNyh3Ic/tzSp/fDWM=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/google.golang.org/appengine/internal/base",
+			"path": "google.golang.org/appengine/internal/base",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "5QsV5oLGSfKZqTCVXP6NRz5T4Tw=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/google.golang.org/appengine/internal/datastore",
+			"path": "google.golang.org/appengine/internal/datastore",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "Gep2T9zmVYV8qZfK2gu3zrmG6QE=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/google.golang.org/appengine/internal/log",
+			"path": "google.golang.org/appengine/internal/log",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "a1XY7rz3BieOVqVI2Et6rKiwQCk=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/google.golang.org/appengine/internal/remote_api",
+			"path": "google.golang.org/appengine/internal/remote_api",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "QtAbHtHmDzcf6vOV9eqlCpKgjiw=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/google.golang.org/appengine/internal/urlfetch",
+			"path": "google.golang.org/appengine/internal/urlfetch",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "akOV9pYnCbcPA8wJUutSQVibdyg=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/google.golang.org/appengine/urlfetch",
+			"path": "google.golang.org/appengine/urlfetch",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "6f8MEU31llHM1sLM/GGH4/Qxu0A=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/gopkg.in/inf.v0",
+			"path": "gopkg.in/inf.v0",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "Wy85jVEPvSSgYWCr/VyfJ5ES3r8=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/gopkg.in/square/go-jose.v2",
+			"path": "gopkg.in/square/go-jose.v2",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "Ho5sr2GbiR8S35IRni7vC54d5Js=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/gopkg.in/square/go-jose.v2/cipher",
+			"path": "gopkg.in/square/go-jose.v2/cipher",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "JFun0lWY9eqd80Js2iWsehu1gc4=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/gopkg.in/square/go-jose.v2/json",
+			"path": "gopkg.in/square/go-jose.v2/json",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "gMJFFBv2lKqUlg2Kwqd5xnb2qfc=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/gopkg.in/square/go-jose.v2/jwt",
+			"path": "gopkg.in/square/go-jose.v2/jwt",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "QqDq2x8XOU7IoOR98Cx1eiV5QY8=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/gopkg.in/yaml.v2",
+			"path": "gopkg.in/yaml.v2",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "TwPq1YtokzgbqJh6zw9e+jcfo9M=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/admissionregistration/v1alpha1",
+			"path": "k8s.io/api/admissionregistration/v1alpha1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "qoNHTZCQ2POAaBXdRyPvQqvmv2I=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/admissionregistration/v1beta1",
+			"path": "k8s.io/api/admissionregistration/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "NaUNgDgDqHbKiC7iXxE9SKUKmxQ=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/apps/v1",
+			"path": "k8s.io/api/apps/v1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "xB9xDSyGQZoN3dkzqGLau2bHAVQ=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/apps/v1beta1",
+			"path": "k8s.io/api/apps/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "YDZV8CzigB5ig0unQ/B4fXEwts8=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/apps/v1beta2",
+			"path": "k8s.io/api/apps/v1beta2",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "K5g8DGBqUzGFcQk22xeKUn2wjKM=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/auditregistration/v1alpha1",
+			"path": "k8s.io/api/auditregistration/v1alpha1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "Gha7gCNk0X86dbXuABZtsPCQFTw=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/authentication/v1",
+			"path": "k8s.io/api/authentication/v1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "MsSHamCXhERztNH7b0Zb0gFFi1w=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/authentication/v1beta1",
+			"path": "k8s.io/api/authentication/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "dmG3eG7+BXDHoKLBgZobFXovQBQ=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/authorization/v1",
+			"path": "k8s.io/api/authorization/v1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "1NzH8RhYYxUe5EH5m7NFnoeVCiQ=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/authorization/v1beta1",
+			"path": "k8s.io/api/authorization/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "inWjH76aHMYRXwF+ccaEEPPCHrs=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/autoscaling/v1",
+			"path": "k8s.io/api/autoscaling/v1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "aTp0VtucZQ4mTNanfU01hd1WkOY=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/autoscaling/v2beta1",
+			"path": "k8s.io/api/autoscaling/v2beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "/ozlom7FNGW7F1sROfPIanWUHCU=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/autoscaling/v2beta2",
+			"path": "k8s.io/api/autoscaling/v2beta2",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "Lln8PDvUC87v7csA1jTWZz/3DQs=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/batch/v1",
+			"path": "k8s.io/api/batch/v1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "gpTi6G9qUj2uuD+2tzsFp8LA68w=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/batch/v1beta1",
+			"path": "k8s.io/api/batch/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "g3pPE6TcJhWjPxqpTUeMCGcMtY0=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/batch/v2alpha1",
+			"path": "k8s.io/api/batch/v2alpha1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "sYdBHGMqigyRvIC82Ifyf7cELj8=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/certificates/v1beta1",
+			"path": "k8s.io/api/certificates/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "xS2KaGDOGpjIKE2Lu73fd6YxuBQ=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/coordination/v1beta1",
+			"path": "k8s.io/api/coordination/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "+D875ocMuLVssxcdugy6TskF45U=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/core/v1",
+			"path": "k8s.io/api/core/v1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "xAHKFf7scLGL20eYRRCjHRBFsiA=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/events/v1beta1",
+			"path": "k8s.io/api/events/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "7FRf2koFA962qR8uMUC9fQuzaTg=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/extensions/v1beta1",
+			"path": "k8s.io/api/extensions/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "abfodUG7+CqXH2Ukvcc8aG3sKbI=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/networking/v1",
+			"path": "k8s.io/api/networking/v1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "NbP2NIDd1H5sOAt0kl4JKbZ0Tgw=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/policy/v1beta1",
+			"path": "k8s.io/api/policy/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "tZf1LBC9aiWyt3T3NhVDozUckII=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/rbac/v1",
+			"path": "k8s.io/api/rbac/v1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "qet5p83aD7PyBuCkW8AlQ0JW0N8=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/rbac/v1alpha1",
+			"path": "k8s.io/api/rbac/v1alpha1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "wbrLHfbxtPKFSypN7AmA2az7x8M=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/rbac/v1beta1",
+			"path": "k8s.io/api/rbac/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "Q2kXYeg3k6ZNsI/Qn3tOSaIEH3E=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/scheduling/v1alpha1",
+			"path": "k8s.io/api/scheduling/v1alpha1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "E+0KPHbwjnLxvCr1Q2es/GB30dQ=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/scheduling/v1beta1",
+			"path": "k8s.io/api/scheduling/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "TDOAtR9N7rGhQvH3azHyw6g3oL4=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/settings/v1alpha1",
+			"path": "k8s.io/api/settings/v1alpha1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "2GMFgO5n1mW2b0qW0hNtKCbu4ns=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/storage/v1",
+			"path": "k8s.io/api/storage/v1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "Jcd4jmBbB9U8Snogw2Np/Tcy6qI=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/storage/v1alpha1",
+			"path": "k8s.io/api/storage/v1alpha1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "ydFTXuh/i5Up6BMipIz3IJWSWkw=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/api/storage/v1beta1",
+			"path": "k8s.io/api/storage/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "lVCpSkEKlWZ2OliZ32fNCsbMNFk=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apiextensions-apiserver/pkg/apis/apiextensions",
+			"path": "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "9AzLM8opOc9wAwOQMN3Mh+8WtqA=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1beta1",
+			"path": "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "6dBFHYzYbQmsi+7JPK7QlgU6b70=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset",
+			"path": "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "QqpLnxTAng+V0bEfy3/gxXxQLnk=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset/scheme",
+			"path": "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset/scheme",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "oh7bdEZ8Hsnenv/UE6jthCwgN0I=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset/typed/apiextensions/v1beta1",
+			"path": "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset/typed/apiextensions/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "rC7CPf96M64exaLYC8MwhDxEjFY=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apiextensions-apiserver/pkg/features",
+			"path": "k8s.io/apiextensions-apiserver/pkg/features",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "ehAUZgg3BT4gz3WA5B9l2o4NOHw=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/api/equality",
+			"path": "k8s.io/apimachinery/pkg/api/equality",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "UDzNn8k5G2GkhcppiGPhpVZ3uNk=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/api/errors",
+			"path": "k8s.io/apimachinery/pkg/api/errors",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "D6K2IZSw8SdAjopr3bU2ZmWg6Vs=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/api/meta",
+			"path": "k8s.io/apimachinery/pkg/api/meta",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "st95rltNz6MQ7GGA2DteNVW9+wM=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/api/resource",
+			"path": "k8s.io/apimachinery/pkg/api/resource",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "HCnNUxaU7kaeO5/jKwgMHOJB3LQ=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/api/validation",
+			"path": "k8s.io/apimachinery/pkg/api/validation",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "SKu9eS1cdg5bhRh6wH1n1RPNJ0Y=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/apis/meta/internalversion",
+			"path": "k8s.io/apimachinery/pkg/apis/meta/internalversion",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "hsRrF6DkfoJ/LfE6Sd2b5y5cSCE=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/apis/meta/v1",
+			"path": "k8s.io/apimachinery/pkg/apis/meta/v1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "d2AKhIgwd8opK1bpFGcYYhc0Wk0=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured",
+			"path": "k8s.io/apimachinery/pkg/apis/meta/v1/unstructured",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "SaYS0R4k2VIG6hA9CIh/xCXGuAc=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/apis/meta/v1/validation",
+			"path": "k8s.io/apimachinery/pkg/apis/meta/v1/validation",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "G0wb46kG8xrLTFvCMR6/Ti9113c=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/apis/meta/v1beta1",
+			"path": "k8s.io/apimachinery/pkg/apis/meta/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "I6+J//YuSZdxncAuc/kar8G1jkY=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/conversion",
+			"path": "k8s.io/apimachinery/pkg/conversion",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "lZgVHIUDKFlQKJBYQVWqED5sDnE=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/conversion/queryparams",
+			"path": "k8s.io/apimachinery/pkg/conversion/queryparams",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "zgYf1VhDcfCpouwRgF5Zodz+g6M=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/fields",
+			"path": "k8s.io/apimachinery/pkg/fields",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "kw0p45bmrpOXcurZuhj7n7RJPwI=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/labels",
+			"path": "k8s.io/apimachinery/pkg/labels",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "vWJ/E4EE3LKSmRPcIoRRoggRtwk=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/runtime",
+			"path": "k8s.io/apimachinery/pkg/runtime",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "ZbSF8zWw5/K0F9TrftkOt3uD3tY=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/runtime/schema",
+			"path": "k8s.io/apimachinery/pkg/runtime/schema",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "zrzqafjVBMG7MbUDRkDjvb/tKjM=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/runtime/serializer",
+			"path": "k8s.io/apimachinery/pkg/runtime/serializer",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "bxY1I5srHiPJx3VhswgGi3CwyXo=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/runtime/serializer/json",
+			"path": "k8s.io/apimachinery/pkg/runtime/serializer/json",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "W74c9THnzEY5+PdqB0Fx6VQJAq0=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/runtime/serializer/protobuf",
+			"path": "k8s.io/apimachinery/pkg/runtime/serializer/protobuf",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "CxRm8Ny1sWZVlEw1WBfbOMtJP40=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/runtime/serializer/recognizer",
+			"path": "k8s.io/apimachinery/pkg/runtime/serializer/recognizer",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "7R78WUhv6d/VIW8EykOe6sIhDgU=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/runtime/serializer/streaming",
+			"path": "k8s.io/apimachinery/pkg/runtime/serializer/streaming",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "pg/e2n60NZuGAfE/w0GvdZX9QZg=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/runtime/serializer/versioning",
+			"path": "k8s.io/apimachinery/pkg/runtime/serializer/versioning",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "p9Wv7xurZXAW0jYL/SLNPbiUjaA=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/selection",
+			"path": "k8s.io/apimachinery/pkg/selection",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "SwEleXXE22RGlg0t7wirGDuisO4=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/types",
+			"path": "k8s.io/apimachinery/pkg/types",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "Gtwo9p42g21v46mUVvj/Qh8yUSE=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/util/clock",
+			"path": "k8s.io/apimachinery/pkg/util/clock",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "hHYW7OWXFMbRVotl2830pa4kO+Y=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/util/errors",
+			"path": "k8s.io/apimachinery/pkg/util/errors",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "bQOeFTINeXcfMOAOPArjRma/1mk=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/util/framer",
+			"path": "k8s.io/apimachinery/pkg/util/framer",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "QptuSXomhT8gURHhjIqMtQXiDxE=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/util/intstr",
+			"path": "k8s.io/apimachinery/pkg/util/intstr",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "NaIzEbjlhEMikewzRXivi2r0xyM=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/util/json",
+			"path": "k8s.io/apimachinery/pkg/util/json",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "y1dxj1ipJgt2PRXXSXDmXrSka6A=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/util/naming",
+			"path": "k8s.io/apimachinery/pkg/util/naming",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "zV6f7i5Duol9NBY8//4d+K88ODo=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/util/net",
+			"path": "k8s.io/apimachinery/pkg/util/net",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "79VgTYoVJBVudRPkUaTr4giZi8c=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/util/rand",
+			"path": "k8s.io/apimachinery/pkg/util/rand",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "THEgyKf4FQGNKuHYAMTda9mChJ8=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/util/runtime",
+			"path": "k8s.io/apimachinery/pkg/util/runtime",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "ozEwMzA48zwMyQ50SwNKSM852U4=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/util/sets",
+			"path": "k8s.io/apimachinery/pkg/util/sets",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "xE6oX9Tv1pEhOSa/U9nMIaaNDPs=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/util/validation",
+			"path": "k8s.io/apimachinery/pkg/util/validation",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "T+DDCd+Y07tEOHiPNt2zzXFq6Tw=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/util/validation/field",
+			"path": "k8s.io/apimachinery/pkg/util/validation/field",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "Pnv8+FVPsQ28jhsyS1bCJucWDg0=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/util/wait",
+			"path": "k8s.io/apimachinery/pkg/util/wait",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "E3Li8+G1p2XQcvuNN11TXpFngjA=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/util/yaml",
+			"path": "k8s.io/apimachinery/pkg/util/yaml",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "KLENC52WPY7h2cBq3P1NMM0FNSs=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/version",
+			"path": "k8s.io/apimachinery/pkg/version",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "NjlHslsa2RXAn/UWondsFMwW9ic=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/pkg/watch",
+			"path": "k8s.io/apimachinery/pkg/watch",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "9sFA+EjKrjpmK4OofQH0p0Rowfg=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apimachinery/third_party/forked/golang/reflect",
+			"path": "k8s.io/apimachinery/third_party/forked/golang/reflect",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "Pv/DiCAqHCJnrYhookF1nZsuZSg=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apiserver/pkg/authentication/authenticator",
+			"path": "k8s.io/apiserver/pkg/authentication/authenticator",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "KJD42MLOrvJh7bTuHbmM4U2E1NY=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apiserver/pkg/authentication/serviceaccount",
+			"path": "k8s.io/apiserver/pkg/authentication/serviceaccount",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "YhVB6D6HRl3PVBkHItb917vwx7U=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apiserver/pkg/authentication/user",
+			"path": "k8s.io/apiserver/pkg/authentication/user",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "dJ+jmoVg39HjwfCdzz53my0gtCM=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apiserver/pkg/features",
+			"path": "k8s.io/apiserver/pkg/features",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "OMb6xLiA4jN8Cx8ezOOt6AMQVSg=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/apiserver/pkg/util/feature",
+			"path": "k8s.io/apiserver/pkg/util/feature",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "VXH+1bk4YPif1z/lIxp7vMV85Ic=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/discovery",
+			"path": "k8s.io/client-go/discovery",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "u7x85zvhgpeDGdjAb62wm21Z8DE=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes",
+			"path": "k8s.io/client-go/kubernetes",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "/5CSu81BakTuQZCrG+R0NJFbHXY=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/scheme",
+			"path": "k8s.io/client-go/kubernetes/scheme",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "jsoiNHN9Z03/4K9KdwWAO9s3rPo=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/admissionregistration/v1alpha1",
+			"path": "k8s.io/client-go/kubernetes/typed/admissionregistration/v1alpha1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "pmmsHaBIeDlD1LSw/KM2wVdYh2I=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/admissionregistration/v1beta1",
+			"path": "k8s.io/client-go/kubernetes/typed/admissionregistration/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "t7UdbYz8ir1FewYR53Izec0Sivw=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/apps/v1",
+			"path": "k8s.io/client-go/kubernetes/typed/apps/v1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "JU//A2Vhtt2lmEJvjPSzotPbax4=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/apps/v1beta1",
+			"path": "k8s.io/client-go/kubernetes/typed/apps/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "09lwkraBQBm444xRhFCgefu8kck=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/apps/v1beta2",
+			"path": "k8s.io/client-go/kubernetes/typed/apps/v1beta2",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "sSK15WvG4aK3PcUrDU1F5O94z4Q=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/auditregistration/v1alpha1",
+			"path": "k8s.io/client-go/kubernetes/typed/auditregistration/v1alpha1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "z8RBQhqz0ef52GAYcGnHbdkRLQw=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/authentication/v1",
+			"path": "k8s.io/client-go/kubernetes/typed/authentication/v1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "xNCsaw6UsrEtSjg+2rMYZueCBIM=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/authentication/v1beta1",
+			"path": "k8s.io/client-go/kubernetes/typed/authentication/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "m8sWDYsVaRB+meitgU1dx+1P0ow=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/authorization/v1",
+			"path": "k8s.io/client-go/kubernetes/typed/authorization/v1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "XucNO6BHSXXNkSQAM1ZdiwDmksc=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/authorization/v1beta1",
+			"path": "k8s.io/client-go/kubernetes/typed/authorization/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "g6sY+YnoyJ+YKuJ23A7kBES6T+I=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/autoscaling/v1",
+			"path": "k8s.io/client-go/kubernetes/typed/autoscaling/v1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "KH7kRVstgAg+9L6HoO/pggR9+eI=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/autoscaling/v2beta1",
+			"path": "k8s.io/client-go/kubernetes/typed/autoscaling/v2beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "1gmsRcUU069YjYPVh42BxUugxlU=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/autoscaling/v2beta2",
+			"path": "k8s.io/client-go/kubernetes/typed/autoscaling/v2beta2",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "u+SQV91fDXsbT35x1qDurWjWhOM=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/batch/v1",
+			"path": "k8s.io/client-go/kubernetes/typed/batch/v1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "ydEd57JAnwWWXbOL6Y9XgOds7jE=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/batch/v1beta1",
+			"path": "k8s.io/client-go/kubernetes/typed/batch/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "XbaL6H8hcf613bHRpLl8O8Ax1sQ=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/batch/v2alpha1",
+			"path": "k8s.io/client-go/kubernetes/typed/batch/v2alpha1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "4nR+ErKIrCr77OvOFJ3iqArk7Cc=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/certificates/v1beta1",
+			"path": "k8s.io/client-go/kubernetes/typed/certificates/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "UnCB9l/X/xvB22kpT+Fyg0P80Rc=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/coordination/v1beta1",
+			"path": "k8s.io/client-go/kubernetes/typed/coordination/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "8o+F1NeIfq4NY+AyeDcM7NyIKqw=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/core/v1",
+			"path": "k8s.io/client-go/kubernetes/typed/core/v1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "ykLmGOjvLCr/URumft1aG8pkujo=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/events/v1beta1",
+			"path": "k8s.io/client-go/kubernetes/typed/events/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "HvngFdOekeng/h5wmYnmKQDLTEw=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/extensions/v1beta1",
+			"path": "k8s.io/client-go/kubernetes/typed/extensions/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "6gtdIT3Qp6z/kwgF0T3l+a1Ns4g=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/networking/v1",
+			"path": "k8s.io/client-go/kubernetes/typed/networking/v1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "dVba4gvzMK97tqCVwwF69bue8tg=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/policy/v1beta1",
+			"path": "k8s.io/client-go/kubernetes/typed/policy/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "8mzr6jmw61rtVvJ0aerLF91qQd0=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/rbac/v1",
+			"path": "k8s.io/client-go/kubernetes/typed/rbac/v1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "9Vdi03QcPkw8fOxMy8MwO1uHbl0=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/rbac/v1alpha1",
+			"path": "k8s.io/client-go/kubernetes/typed/rbac/v1alpha1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "+wa2e0UKWqLWJNajZ1/hHxvCe94=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/rbac/v1beta1",
+			"path": "k8s.io/client-go/kubernetes/typed/rbac/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "44fHtB2fH5krsp71kJy6u10dj5s=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/scheduling/v1alpha1",
+			"path": "k8s.io/client-go/kubernetes/typed/scheduling/v1alpha1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "6y5FUtAVxgACmJIR98cB0tVzLbI=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/scheduling/v1beta1",
+			"path": "k8s.io/client-go/kubernetes/typed/scheduling/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "tIaveHngAO+OYXfaBtOLolwJiRs=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/settings/v1alpha1",
+			"path": "k8s.io/client-go/kubernetes/typed/settings/v1alpha1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "svzkNqhp1FHxdNd/iYojR/ZNdEU=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/storage/v1",
+			"path": "k8s.io/client-go/kubernetes/typed/storage/v1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "+DQkr+rhP6CAV5/PBa9mOkzBBbU=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/storage/v1alpha1",
+			"path": "k8s.io/client-go/kubernetes/typed/storage/v1alpha1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "wauHj3XgKuSoAOuuDqudqovY4jQ=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/kubernetes/typed/storage/v1beta1",
+			"path": "k8s.io/client-go/kubernetes/typed/storage/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "h3FUW5WICS1Nz9oLCDzjNsvqeM4=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/pkg/apis/clientauthentication",
+			"path": "k8s.io/client-go/pkg/apis/clientauthentication",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "3vv7i98z1FygCauLZ4mg9RsT9Lk=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/pkg/apis/clientauthentication/v1alpha1",
+			"path": "k8s.io/client-go/pkg/apis/clientauthentication/v1alpha1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "6DMbz5JnwquAwMbT/w5aYt4D3Hc=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/pkg/apis/clientauthentication/v1beta1",
+			"path": "k8s.io/client-go/pkg/apis/clientauthentication/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "ktNfV92Lly2Tp/6VBE/3iFH0ns8=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/pkg/version",
+			"path": "k8s.io/client-go/pkg/version",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "d3gPzoqPqze/wfPs1jXitWCDybg=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/plugin/pkg/client/auth/exec",
+			"path": "k8s.io/client-go/plugin/pkg/client/auth/exec",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "X1vWjHQpaQCcHnXjLnQBubMPgUI=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/rest",
+			"path": "k8s.io/client-go/rest",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "+wYCwQaVc1GvMWwOWc3wXd2GT5s=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/rest/watch",
+			"path": "k8s.io/client-go/rest/watch",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "gx6Hc17LJ8Q/NPNm7ameWaldfEQ=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/tools/auth",
+			"path": "k8s.io/client-go/tools/auth",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "dSDB43NCeYcndBJAkmsQB06ptbA=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/tools/clientcmd",
+			"path": "k8s.io/client-go/tools/clientcmd",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "4KsMHoSucjQi0FW3kqkFIPgssyk=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/tools/clientcmd/api",
+			"path": "k8s.io/client-go/tools/clientcmd/api",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "REsiLFxKYUjcTcPnDBwgr4GkArg=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/tools/clientcmd/api/latest",
+			"path": "k8s.io/client-go/tools/clientcmd/api/latest",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "gOq6PL80JftrypouhV+xxbf/WUo=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/tools/clientcmd/api/v1",
+			"path": "k8s.io/client-go/tools/clientcmd/api/v1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "rRC9GCWXfyIXKHBCeKpw7exVybE=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/tools/metrics",
+			"path": "k8s.io/client-go/tools/metrics",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "n2h6CjJR1o+JM2snIIsCdcMMDWs=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/tools/reference",
+			"path": "k8s.io/client-go/tools/reference",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "kSuBdc/eSGR7wLWOfC1MybK+WCo=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/transport",
+			"path": "k8s.io/client-go/transport",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "hDGF2m/JJN43zHnEnamwbYVmM54=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/util/cert",
+			"path": "k8s.io/client-go/util/cert",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "KSB22yQOaax0P/RkHCDp80u+Jcs=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/util/connrotation",
+			"path": "k8s.io/client-go/util/connrotation",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "yXKT7cJNCv5vjwGKhpc/DUsQg+A=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/util/flowcontrol",
+			"path": "k8s.io/client-go/util/flowcontrol",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "WRb0rXGx56fwcCisVW7GoI6gO/A=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/util/homedir",
+			"path": "k8s.io/client-go/util/homedir",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "W6bJiNAwgNwNJC+y+TPtacgUGlY=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/util/integer",
+			"path": "k8s.io/client-go/util/integer",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "VK8XBxAuEr0Vp9W96bH1niYlLvc=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/client-go/util/retry",
+			"path": "k8s.io/client-go/util/retry",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "3DVwHY1QPiMG1w9zk7ANhJ5F2C0=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/klog",
+			"path": "k8s.io/klog",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "pfruHn7a1wmTh5wCcCIBoWgxQhI=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/kube-aggregator/pkg/apis/apiregistration",
+			"path": "k8s.io/kube-aggregator/pkg/apis/apiregistration",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "vVdQq3O3t8pUqi9/UOecOepLijA=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/kube-aggregator/pkg/apis/apiregistration/v1",
+			"path": "k8s.io/kube-aggregator/pkg/apis/apiregistration/v1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "PsHcCLlKXhyZZnZIE/lbp3lgELg=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/kube-aggregator/pkg/apis/apiregistration/v1beta1",
+			"path": "k8s.io/kube-aggregator/pkg/apis/apiregistration/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "IjesRQkE3co2yQMcbfA5vnQTkG0=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/kube-aggregator/pkg/client/clientset_generated/clientset",
+			"path": "k8s.io/kube-aggregator/pkg/client/clientset_generated/clientset",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "j5bVxl/8RBGEFCAorzLv5UyZmmY=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/kube-aggregator/pkg/client/clientset_generated/clientset/scheme",
+			"path": "k8s.io/kube-aggregator/pkg/client/clientset_generated/clientset/scheme",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "Rd2si7cw++2KcFfOjCsnF66+Oms=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/kube-aggregator/pkg/client/clientset_generated/clientset/typed/apiregistration/v1",
+			"path": "k8s.io/kube-aggregator/pkg/client/clientset_generated/clientset/typed/apiregistration/v1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "Ge+nfY9F4rrKIZJHuoqv4vB4lMU=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/kube-aggregator/pkg/client/clientset_generated/clientset/typed/apiregistration/v1beta1",
+			"path": "k8s.io/kube-aggregator/pkg/client/clientset_generated/clientset/typed/apiregistration/v1beta1",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "N0PmztoudDyaXhbLwSKDCGH0nrM=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/kubernetes/pkg/apis/apps",
+			"path": "k8s.io/kubernetes/pkg/apis/apps",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "GebrNeQYK2EUTyWh01ipsP+lXfA=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/kubernetes/pkg/apis/autoscaling",
+			"path": "k8s.io/kubernetes/pkg/apis/autoscaling",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "9zbiRcaTfQBv35+UwBs5q2qHPFw=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/kubernetes/pkg/apis/core",
+			"path": "k8s.io/kubernetes/pkg/apis/core",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "Kn/S6gjhX3iBQoPLyoBFwfUHj+0=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/kubernetes/pkg/features",
+			"path": "k8s.io/kubernetes/pkg/features",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "jcsEUTWEvJTHKiEQgWcLiGlrb5Y=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/kubernetes/pkg/kubelet/apis",
+			"path": "k8s.io/kubernetes/pkg/kubelet/apis",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "2KGG6eyE0kZMAWSPW4QUUfE6dLs=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/k8s.io/kubernetes/pkg/serviceaccount",
+			"path": "k8s.io/kubernetes/pkg/serviceaccount",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
+		},
+		{
+			"checksumSHA1": "ZExWoMcqJ9WKc9KMJQUtIST3nTc=",
+			"origin": "git.blendlabs.com/blend/deployinator/vendor/sigs.k8s.io/yaml",
+			"path": "sigs.k8s.io/yaml",
+			"revision": "5d162d2cfabcd2884f8bbdd81d321d7748f41d88",
+			"revisionTime": "2019-11-05T20:19:43Z"
 		}
 	],
 	"rootPath": "github.com/mat285/echo"
