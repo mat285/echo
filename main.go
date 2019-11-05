@@ -86,7 +86,7 @@ func main() {
 		if err != nil {
 			return r.JSON().InternalError(err)
 		}
-		val, err := client.GetValue("secret/sandbox/service/echo/hello")
+		val, err := client.GetValue("secret/sandbox/service/echo-private/hello")
 		if err != nil {
 			return r.JSON().InternalError(err)
 		}
