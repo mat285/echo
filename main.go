@@ -8,6 +8,8 @@ import (
 	"os"
 	"time"
 
+	"git.blendlabs.com/blend/deployinator/pkg/vault"
+
 	logger "github.com/blendlabs/go-logger"
 	"github.com/blendlabs/go-util/env"
 	web "github.com/blendlabs/go-web"
@@ -78,6 +80,18 @@ func main() {
 			return r.RawWithContentType(web.ContentTypeText, []byte("nada."))
 		}
 		return r.RawWithContentType(web.ContentTypeText, body)
+	})
+
+	app.GET("/vault", func(r *web.Ctx) web.Result {
+		client, err := vault.NewClientFromEnv()
+		if err != nil {
+			return r.JSON().InternalError(err)
+		}
+		val, err := client.GetValue("secret/sandbox/service/echo/hello")
+		if err != nil {
+			return r.JSON().InternalError(err)
+		}
+		return r.RawWithContentType(web.ContentTypeText, []byte(val))
 	})
 
 	log.Fatal(app.Start())
