@@ -6,7 +6,6 @@ import (
 	"io/ioutil"
 	"net/http"
 	"os"
-	"strings"
 	"sync"
 	"time"
 
@@ -151,15 +150,7 @@ var vaultRequest = func(req *request.Request, successResponse interface{}) error
 	if _, err := requestSucceeded(); err != nil {
 		return err
 	}
-	code := responseMeta.StatusCode
-	if code == http.StatusOK || code == http.StatusNoContent {
-		return nil
-	}
-	return &vaultError{
-		code: code,
-		error: fmt.Errorf("Vault %s `%s` error %d: %s", req.Meta(), req.Meta().URL, code,
-			strings.Join(errorResponse.Errors, ", ")),
-	}
+	return nil
 }
 
 type vaultResult struct {
