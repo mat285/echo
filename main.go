@@ -1,10 +1,13 @@
 package main
 
 import (
+	"crypto/rand"
+	"encoding/hex"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	"log"
+	"net/http"
 	"os"
 	"time"
 
@@ -14,7 +17,7 @@ import (
 )
 
 func main() {
-	agent := logger.NewFromEnvironment()
+	agent := logger.All()
 
 	appStart := time.Now()
 
@@ -27,6 +30,9 @@ func main() {
 	app.SetLogger(agent)
 	app.GET("/", func(r *web.Ctx) web.Result {
 		return r.Text().Result("echo")
+	})
+	app.GET("/text/:text", func(r *web.Ctx) web.Result {
+		return r.Text().Result(r.Param("text"))
 	})
 	app.GET("/headers", func(r *web.Ctx) web.Result {
 		contents, err := json.Marshal(r.Request.Header)
@@ -80,5 +86,27 @@ func main() {
 		return r.RawWithContentType(web.ContentTypeText, body)
 	})
 
+	go ping()
+
 	log.Fatal(app.Start())
+}
+
+func ping() {
+	url := env.Env().String("PING_URL")
+	if len(url) == 0 {
+		fmt.Println("No url for pinging")
+		return
+	}
+	for {
+		time.Sleep(time.Second)
+		key := make([]byte, 12)
+		rand.Read(key)
+		rurl := url + "/text/hello%20my%20secret%20is%20" + hex.EncodeToString(key)
+		req, err := http.NewRequest("GET", rurl, nil)
+		if err != nil {
+			fmt.Println(err.Error())
+			continue
+		}
+		http.DefaultClient.Do(req)
+	}
 }
