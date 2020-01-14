@@ -107,6 +107,9 @@ func ping() {
 			fmt.Println(err.Error())
 			continue
 		}
-		http.DefaultClient.Do(req)
+		_, err = http.DefaultClient.Do(req)
+		if err != nil {
+			fmt.Println(err.Error())
+		}
 	}
 }
