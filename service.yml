@@ -4,3 +4,4 @@ autoscale: enabled
 
 istio:
     enabled: true
+    tlsMode: STRICT
