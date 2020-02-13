@@ -1,4 +1,4 @@
-accessibility: protected
+accessibility: internal
 containerPort: 80
 autoscale: enabled
 
