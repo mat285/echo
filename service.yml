@@ -5,3 +5,10 @@ autoscale: enabled
 istio:
     enabled: true
     tlsMode: STRICT
+    gateway:
+        maxReplicas: 15
+        minRepicas: 3
+        resources:
+            requests:
+                cpu: 100m
+                memory: 128Mi
