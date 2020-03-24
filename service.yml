@@ -7,7 +7,7 @@ istio:
     tlsMode: STRICT
     gateway:
         maxReplicas: 15
-        minRepicas: 3
+        minReplicas: 3
         resources:
             requests:
                 cpu: 100m
