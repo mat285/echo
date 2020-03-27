@@ -48,6 +48,11 @@ func main() {
 		r.Response.Header().Set("Content-Type", "application/yaml") // but is it really?
 		return r.Raw(contents)
 	})
+	app.GET("/sleep/:time", func(r *web.Ctx) web.Result {
+		val, _ := r.ParamInt("time")
+		time.Sleep(time.Duration(val) * time.Second)
+		return r.API().OK()
+	})
 	app.GET("/long", func(r *web.Ctx) web.Result {
 		ticker := time.NewTicker(500 * time.Millisecond)
 		for {
