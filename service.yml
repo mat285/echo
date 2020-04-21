@@ -1,5 +1,5 @@
 accessibility: protected
-containerPort: 80
+containerPort: 15000
 autoscale: enabled
 
 istio:
