@@ -1,6 +1,7 @@
 accessibility: protected
 containerPort: 80
 autoscale: disabled
+replicas: 1
 resources:
     requests:
         cpu: 5m
