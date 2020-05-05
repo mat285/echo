@@ -1,7 +1,22 @@
 accessibility: protected
 containerPort: 80
 autoscale: enabled
+resources:
+    requests:
+        cpu: 50m
+        memory: 64Mi
+    limits:
+        cpu: 50m
+        memory: 64Mi
 
 istio:
     enabled: true
     tlsMode: STRICT
+    gateway:
+        resources:
+            requests:
+                cpu: 50m
+                memory: 64Mi
+            limits:
+                cpu: 50m
+                memory: 64Mi
