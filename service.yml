@@ -4,7 +4,7 @@ autoscale: enabled
 
 istio:
     enabled: true
-    tlsMode: STRICT
+    tlsMode: PERMISSIVE
     gateway:
         maxReplicas: 15
         minReplicas: 3
