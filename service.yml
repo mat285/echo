@@ -1,7 +1,8 @@
 accessibility: protected
 containerPort: 80
-extraSecurityGroups:
-    - sg-006eda18073589a9d
+loadBalancerSecurityGroups:
+    - id: sg-006eda18073589a9d
+    - name: masters.test.k8s.centrio.com
 resources:
     requests:
         cpu: 20m
