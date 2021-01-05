@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
+	"math/rand"
 	"os"
 	"time"
 
@@ -14,8 +15,10 @@ import (
 )
 
 func main() {
-	time.Sleep(20 * time.Second)
-	os.Exit(1)
+	go func() {
+		time.Sleep(time.Duration(10+rand.Intn(20)) * time.Second)
+		os.Exit(1)
+	}()
 
 	agent := logger.NewFromEnvironment()
 
