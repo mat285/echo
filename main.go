@@ -14,6 +14,9 @@ import (
 )
 
 func main() {
+	time.Sleep(20 * time.Second)
+	os.Exit(1)
+
 	agent := logger.NewFromEnvironment()
 
 	appStart := time.Now()
