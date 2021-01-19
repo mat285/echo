@@ -15,4 +15,5 @@ readinessProbe:
     path: /
     port: 80
     scheme: HTTP
-    
+
+rollbackFailingDeployment: true
